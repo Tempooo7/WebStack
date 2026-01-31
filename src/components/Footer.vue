@@ -18,23 +18,28 @@
         </div>
 
         <!-- Right: Contact Form -->
-        <div class="space-y-6">
+        <form @submit.prevent="submitForm" class="space-y-6">
           <div>
             <input 
+              v-model="form.name"
               type="text" 
               placeholder="Full Name*"
+              required
               class="w-full bg-transparent border-b border-gray-700 py-3 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors"
             >
           </div>
           <div>
             <input 
+              v-model="form.email"
               type="email" 
               placeholder="Email*"
+              required
               class="w-full bg-transparent border-b border-gray-700 py-3 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors"
             >
           </div>
           <div>
             <input 
+              v-model="form.phone"
               type="tel" 
               placeholder="Phone Number*"
               class="w-full bg-transparent border-b border-gray-700 py-3 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors"
@@ -42,12 +47,24 @@
           </div>
           <div>
             <input 
+              v-model="form.message"
               type="text" 
               placeholder="Comment"
               class="w-full bg-transparent border-b border-gray-700 py-3 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors"
             >
           </div>
-        </div>
+          
+          <div class="pt-4">
+            <button 
+              type="submit" 
+              :disabled="isSubmitting"
+              class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+            </button>
+            <p v-if="showSuccess" class="text-green-400 mt-2 text-sm">Message sent successfully!</p>
+          </div>
+        </form>
       </div>
 
       <!-- Middle Section: Navigation & Social -->
@@ -107,4 +124,46 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const form = ref({
+  name: '',
+  email: '',
+  phone: '',
+  message: ''
+});
+
+const isSubmitting = ref(false);
+const showSuccess = ref(false);
+
+// REPLACE THIS WITH YOUR FORMSPREE ENDPOINT
+// Example: 'https://formspree.io/f/xyzkqwer'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeezjzae';
+
+const submitForm = async () => {
+  isSubmitting.value = true;
+  
+  try {
+    const response = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form.value)
+    });
+
+    if (response.ok) {
+      showSuccess.value = true;
+      form.value = { name: '', email: '', phone: '', message: '' };
+      setTimeout(() => showSuccess.value = false, 5000);
+    } else {
+      alert('Failed to send message. Please try again.');
+    }
+  } catch (error) {
+    alert('An error occurred. Please try again later.');
+    console.error(error);
+  } finally {
+    isSubmitting.value = false;
+  }
+};
 </script>
