@@ -6,7 +6,7 @@
         <h2 class="text-6xl font-bold text-gray-900 max-w-md leading-tight">
           What Clients<br>Are Saying
         </h2>
-        <div class="flex items-center gap-2 text-sm font-medium">
+        <div class="hidden md:flex items-center gap-2 text-sm font-medium">
            <div class="w-3 h-3 bg-black rounded-full"></div>
         <h2 class="text-base font-semibold text-black">Services</h2>
       </div>

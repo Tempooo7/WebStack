@@ -5,7 +5,7 @@
       <!-- Top corners -->
       <h2 class="absolute top-8 left-8 md:top-16 md:left-16 text-2xl md:text-5xl font-bold">Our Team Experts</h2>
       
-      <div class="absolute top-8 right-8 md:top-16 md:right-16 flex items-center gap-2 text-sm font-medium">
+      <div class="absolute top-8 right-8 md:top-16 md:right-16 hidden md:flex items-center gap-2 text-sm font-medium">
         <div class="w-3 h-3 bg-white rounded-full"></div>
         <h2 class="text-base font-semibold text-white">Team Members</h2>
       </div>

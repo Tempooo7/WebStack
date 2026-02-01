@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="flex justify-between items-center mb-16">
         <h2 class="text-4xl md:text-6xl font-bold">Pricing Plan</h2>
-        <div class="flex items-center gap-2 text-sm font-medium">
+        <div class="hidden md:flex items-center gap-2 text-sm font-medium">
           <span>Our Pricing</span>
           <div class="w-2 h-2 bg-white rounded-full"></div>
         </div>

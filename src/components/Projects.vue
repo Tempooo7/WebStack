@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="flex justify-between items-center mb-8 md:mb-16">
         <h2 class="text-3xl md:text-6xl font-bold">Latest Projects</h2>
-        <div class="flex items-center gap-2 text-sm font-medium">
+        <div class="hidden md:flex items-center gap-2 text-sm font-medium">
           <div class="w-3 h-3 bg-white rounded-full"></div>
           <h2 class="text-base font-semibold text-white">Projects</h2>
         </div>

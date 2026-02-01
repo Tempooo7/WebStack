@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-16 gap-4 md:gap-0">
         <h2 class="text-4xl md:text-6xl font-bold text-gray-900">Questions</h2>
-        <div class="flex items-center gap-2 text-sm font-medium">
+        <div class="hidden md:flex items-center gap-2 text-sm font-medium">
           <span>FAQ</span>
           <div class="w-2 h-2 bg-black rounded-full"></div>
         </div>
