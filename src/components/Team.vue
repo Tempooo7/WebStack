@@ -1,5 +1,5 @@
 <template>
-  <section id="team" class="py-6 px-4 text-white">
+  <section id="team" class="py-6 px-4 text-white fade-in-section">
     <div class="container mx-auto relative bg-[#050203] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <!-- Left: Heading and Description -->
@@ -26,7 +26,7 @@
             <div 
               v-for="(member, index) in teamMembers" 
               :key="index"
-              class="relative group overflow-hidden rounded-2xl aspect-[3/4] bg-gray-800"
+              class="relative group overflow-hidden rounded-2xl aspect-3/4 bg-gray-800"
             >
               <img 
                 :src="member.image" 
@@ -35,7 +35,7 @@
               >
               
               <!-- Hover Overlay -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div class="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <div class="text-white">
                   <div class="font-bold text-lg">{{ member.role }}</div>
                   <div class="text-sm opacity-90">{{ member.name }}</div>

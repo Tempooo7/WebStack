@@ -1,9 +1,9 @@
 <template>
-  <section id="pricing" class="py-6 px-4 text-white">
+  <section id="pricing" class="py-6 px-4 text-white fade-in-section">
     <div class="container mx-auto relative bg-[#050203] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <!-- Header -->
       <div class="flex justify-between items-center mb-16">
-        <h2 class="text-6xl font-bold">Pricing Plan</h2>
+        <h2 class="text-4xl md:text-6xl font-bold">Pricing Plan</h2>
         <div class="flex items-center gap-2 text-sm font-medium">
           <span>Our Pricing</span>
           <div class="w-2 h-2 bg-white rounded-full"></div>

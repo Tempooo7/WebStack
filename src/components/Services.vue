@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="py-6 px-4">
+  <section id="services" class="py-6 px-4 fade-in-section">
     <div class="container mx-auto relative bg-[#F7F7F7] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <!-- Header -->
       <div class="flex justify-between items-center mb-16">
@@ -34,20 +34,20 @@
         >
           <!-- Service Header -->
           <div 
-            class="flex items-center justify-between cursor-pointer"
+            class="flex items-center justify-between cursor-pointer gap-4"
             @click="toggleService(service.id)"
           >
-            <div class="flex items-center gap-8">
-              <span class="text-lg font-medium text-gray-400">({{ String(index + 1).padStart(2, '0') }})</span>
-              <h3 class="text-3xl font-semibold text-gray-900">{{ service.title }}</h3>
+            <div class="flex items-center gap-4 md:gap-8">
+              <span class="text-lg font-medium text-gray-400 shrink-0">({{ String(index + 1).padStart(2, '0') }})</span>
+              <h3 class="text-xl md:text-3xl font-semibold text-gray-900">{{ service.title }}</h3>
             </div>
             <button 
               :class="[
-                'w-12 h-12 rounded-full text-white flex items-center justify-center transition-colors',
+                'w-10 h-10 md:w-12 md:h-12 rounded-full text-white flex items-center justify-center transition-colors shrink-0',
                 expandedService === service.id ? 'bg-black hover:bg-gray-800' : 'bg-gray-700 hover:bg-black'
               ]"
             >
-              <svg class="w-5 h-5 rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 md:w-5 md:h-5 rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
             </button>

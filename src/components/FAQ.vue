@@ -1,9 +1,9 @@
 <template>
-  <section id="faq" class="py-20 bg-gray-50">
+  <section id="faq" class="py-10 md:py-20 bg-gray-50 fade-in-section">
     <div class="container mx-auto px-6">
       <!-- Header -->
-      <div class="flex justify-between items-center mb-16">
-        <h2 class="text-6xl font-bold text-gray-900">Questions</h2>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-16 gap-4 md:gap-0">
+        <h2 class="text-4xl md:text-6xl font-bold text-gray-900">Questions</h2>
         <div class="flex items-center gap-2 text-sm font-medium">
           <span>FAQ</span>
           <div class="w-2 h-2 bg-black rounded-full"></div>
@@ -25,7 +25,7 @@
             class="flex items-start justify-between cursor-pointer gap-8"
             @click="toggleFaq(faq.id)"
           >
-            <div class="flex items-start gap-6 flex-grow">
+            <div class="flex items-start gap-6 grow">
               <span class="text-lg font-medium text-gray-400 shrink-0">
                 ({{ String(index + 1).padStart(2, '0') }})
               </span>

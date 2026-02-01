@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-6 px-4">
+  <section id="home" class="bg-white py-6 px-4 fade-in-section">
     <div class="container mx-auto relative bg-black text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
         
         <!-- Vibrant Wave Background -->
@@ -57,7 +57,7 @@
                  <div class="text-sm text-gray-300 w-[400px] pl-[58px] mb-8 md:mb-12 mt-4 md:mt-0 md:-ml-16">
                     <span class="font-bold text-white ">WebStack</span> Helps You Turn Your Work into Something People Remember.
                 </div>
-                <h2 class="text-[64px] md:text-[100px] lg:text-[100px] font-bold leading-[0.85] tracking-tighter text-white -ml-2 mb-[-10px]">
+                <h2 class="text-[48px] md:text-[100px] lg:text-[100px] font-bold leading-[0.85] tracking-tighter text-white -ml-2 mb-[-10px]">
                     WebStack
                 </h2>      
                 

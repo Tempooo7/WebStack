@@ -26,4 +26,28 @@ import Team from './components/Team.vue';
 import Pricing from './components/Pricing.vue';
 import FAQ from './components/FAQ.vue';
 import Footer from './components/Footer.vue';
+
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, observerOptions);
+
+  const sections = document.querySelectorAll('.fade-in-section');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
 </script>

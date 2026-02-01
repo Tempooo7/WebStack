@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-6 px-4">
+  <section id="about" class="bg-white py-6 px-4 fade-in-section">
     <div class="container mx-auto relative bg-black text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <!-- About Us Header -->
       <div class="flex items-center gap-3 mb-8">

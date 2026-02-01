@@ -1,5 +1,5 @@
 <template>
-  <section id="testimonials" class="py-6 px-4">
+  <section id="testimonials" class="py-6 px-4 fade-in-section">
     <div class="container mx-auto relative bg-[#F7F7F7] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <!-- Header -->
       <div class="flex justify-between items-start mb-16">

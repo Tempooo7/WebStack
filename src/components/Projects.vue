@@ -1,9 +1,9 @@
 <template>
-  <section id="projects" class="py-6 px-4 text-white">
+  <section id="projects" class="py-6 px-4 text-white fade-in-section">
     <div class="container mx-auto relative bg-[#050203] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-8 md:p-16">
       <!-- Header -->
       <div class="flex justify-between items-center mb-16">
-        <h2 class="text-6xl font-bold">Latest Projects</h2>
+        <h2 class="text-4xl md:text-6xl font-bold">Latest Projects</h2>
         <div class="flex items-center gap-2 text-sm font-medium">
           <div class="w-3 h-3 bg-white rounded-full"></div>
           <h2 class="text-base font-semibold text-white">Projects</h2>
@@ -26,7 +26,7 @@
             </div>
 
             <!-- Project Title -->
-            <h3 class="text-5xl font-bold">{{ currentProject.title }}</h3>
+            <h3 class="text-3xl md:text-5xl font-bold">{{ currentProject.title }}</h3>
 
             <!-- Project Description -->
             <p class="text-gray-700 leading-relaxed">

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#050203] text-white py-16">
+  <footer class="bg-[#050203] text-white py-8 md:py-16">
     <div class="container mx-auto px-6">
       <!-- Top Section: Logo, Heading & Form -->
       <div class="grid md:grid-cols-2 gap-16 mb-20">
@@ -12,7 +12,7 @@
       
 
           <!-- Heading -->
-          <h2 class="text-5xl font-bold leading-tight">
+          <h2 class="text-3xl md:text-5xl font-bold leading-tight">
             Have A Project In<br>Mind? Let's Get In<br>Touch
           </h2>
         </div>
