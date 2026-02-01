@@ -5,7 +5,7 @@
         <!-- Left: Heading and Description -->
         <div class="flex flex-col justify-center space-y-8">
           <div class="flex justify-between items-center">
-            <h2 class="text-6xl font-bold relative bottom-[230px]">Our Team Experts</h2>
+            <h2 class="text-4xl md:text-6xl font-bold relative md:bottom-[260px]">Our Team Experts</h2>
           </div>
           
           <p class="text-2xl text-gray-300 leading-relaxed text-center max-w-md mx-auto">
@@ -14,9 +14,9 @@
         </div>
 
         <!-- Right: Team Grid -->
-        <div class="relative pt-[16px]">
+        <div class="relative pt-[16px] md:mt-32">
           <!-- Badge -->
-          <div class="absolute -top-8 right-0 flex items-center gap-2 text-sm font-medium">
+          <div class="absolute -top-8 md:-top-16 right-0 flex items-center gap-2 text-sm font-medium">
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <h2 class="text-base font-semibold text-white">Team Members</h2>
           </div>

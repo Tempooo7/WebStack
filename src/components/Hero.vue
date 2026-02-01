@@ -54,7 +54,7 @@
         <!-- Bottom Footer -->
         <div class="relative z-10 mt-16">
             <div class="flex flex-col justify-center items-start">
-                 <div class="text-sm text-gray-300 w-[400px] pl-[58px] mb-8 md:mb-12 mt-4 md:mt-0 md:-ml-16">
+                 <div class="text-sm text-gray-300 w-full md:w-[400px] pl-0 md:pl-[58px] mb-8 md:mb-12 mt-0 md:mt-0 md:-ml-16">
                     <span class="font-bold text-white ">WebStack</span> Helps You Turn Your Work into Something People Remember.
                 </div>
                 <h2 class="text-[48px] md:text-[100px] lg:text-[100px] font-bold leading-[0.85] tracking-tighter text-white -ml-2 mb-[-10px]">

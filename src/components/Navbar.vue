@@ -21,6 +21,59 @@
         Get Started
       </a>
 
+      <!-- Mobile Menu Button -->
+      <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden z-50 relative">
+        <svg v-if="!isMobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+        <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Overlay -->
+      <transition
+        enter-active-class="transition duration-300 ease-out"
+        enter-from-class="opacity-0 translate-x-full"
+        enter-to-class="opacity-100 translate-x-0"
+        leave-active-class="transition duration-200 ease-in"
+        leave-from-class="opacity-100 translate-x-0"
+        leave-to-class="opacity-0 translate-x-full"
+      >
+        <div v-if="isMobileMenuOpen" class="fixed inset-0 bg-[#050203] z-[60] flex flex-col px-8 md:hidden h-screen w-screen overflow-y-auto">
+          <!-- Header (Logo & Close Button) -->
+          <div class="flex justify-between items-center pt-8 pb-12">
+             <!-- Logo -->
+             <img class="w-12 h-12" src="../assets/Image/logo 1.svg" alt="WebStack Logo">
+             
+             <!-- Close Button -->
+             <button @click="isMobileMenuOpen = false" class="text-white hover:text-gray-300 transition-colors">
+               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+               </svg>
+             </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="flex flex-col space-y-8">
+            <a 
+              v-for="(link, index) in navLinks" 
+              :key="link.href"
+              :href="link.href" 
+              @click="isMobileMenuOpen = false" 
+              class="text-4xl font-bold text-white hover:text-gray-400 transition-colors"
+              :class="[activeSection === link.id ? 'text-gray-200' : '']"
+            >
+              {{ link.label }}
+            </a>
+            
+            <a href="#contact" @click="isMobileMenuOpen = false" class="mt-8 inline-block text-center bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </transition>
+
 
 
 
@@ -33,6 +86,16 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const activeSection = ref('home');
+const isMobileMenuOpen = ref(false);
+
+const navLinks = [
+  { href: '#home', label: 'Home', id: 'home' },
+  { href: '#about', label: 'About', id: 'about' },
+  { href: '#services', label: 'Services', id: 'services' },
+  { href: '#projects', label: 'Work', id: 'projects' },
+  { href: '#pricing', label: 'Pricing', id: 'pricing' },
+  { href: '#faq', label: 'Questions', id: 'faq' },
+];
 
 const handleScroll = () => {
   const sections = ['home', 'about', 'services', 'projects', 'pricing', 'faq'];

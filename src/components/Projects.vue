@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="py-6 px-4 text-white fade-in-section">
+  <section id="projects" class="py-6 px-4 text-white fade-in-section scroll-mt-32">
     <div class="container mx-auto relative bg-[#050203] text-white rounded-[40px] overflow-hidden min-h-[85vh] flex flex-col justify-between p-4 md:p-16">
       <!-- Header -->
       <div class="flex justify-between items-center mb-8 md:mb-16">
