@@ -92,24 +92,16 @@
 
           <!-- Video Testimonial -->
           <div class="relative bg-gray-700 rounded-3xl overflow-hidden h-[380px] group cursor-pointer">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop"
-              alt="Video Testimonial"
-              class="w-full h-full object-cover"
-            >
+            <video 
+                src="../assets/Image/Gen-4 Turbo make it so he is talking and like giving a testimonail  3472740700.mp4" 
+                playsinline
+                autoplay
+                loop              
+                muted 
+                class="absolute inset-0 w-full h-full object-cover"
+            ></video>
             
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-
-            <!-- Play Button -->
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-gray-900 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-            </div>
-
+         
             <!-- Author Info -->
             <div class="absolute bottom-6 left-6 text-white">
               <div class="font-semibold">Master of Lead</div>

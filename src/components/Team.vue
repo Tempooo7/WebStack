@@ -26,7 +26,10 @@
             <div 
               v-for="(member, index) in teamMembers" 
               :key="index"
-              class="relative group overflow-hidden rounded-2xl aspect-3/4 bg-gray-800"
+              :class="[
+                'relative group overflow-hidden rounded-2xl aspect-3/4 bg-gray-800',
+                index === 2 ? 'col-span-2 w-1/2 mx-auto' : ''
+              ]"
             >
               <img 
                 :src="member.image" 
@@ -51,27 +54,26 @@
 
 <script setup>
 import { ref } from 'vue';
+import Tamer from '../assets/Image/BookHaven.jpg'
+import Mojtaba from '../assets/Image/ERP.jpg'
+import Faraj from '../assets/Image/rahlaty.svg'
 
 const teamMembers = ref([
   {
-    name: 'John Smith',
-    role: 'Lead Designer',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=600&fit=crop'
+    name: 'Tamer Mohammed',
+    role: 'Founder',
+    image: Tamer
   },
   {
-    name: 'Sarah Johnson',
-    role: 'Frontend Developer',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=600&fit=crop'
+    name: 'Mojtaba Ahmed',
+    role: 'Founder',
+    image: Mojtaba
   },
   {
-    name: 'Emily Davis',
-    role: 'UX Designer',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=600&fit=crop'
+    name: 'Faraj Rm',
+    role: 'Founder',
+    image: Faraj
   },
-  {
-    name: 'Michael Brown',
-    role: 'Developer',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop'
-  }
+ 
 ]);
 </script>

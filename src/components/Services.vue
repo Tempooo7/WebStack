@@ -25,12 +25,13 @@
         <div 
           v-for="(service, index) in services" 
           :key="service.id"
+          :id="'service-' + service.id"
+          class="scroll-mt-32 border-gray-200"
           :class="[
             'border-t py-12 transition-colors',
             index === services.length - 1 ? 'border-b' : '',
             expandedService === service.id ? 'bg-white px-6 -mx-6' : 'group hover:bg-white px-6 -mx-6'
           ]"
-          class="border-gray-200"
         >
           <!-- Service Header -->
           <div 
@@ -91,9 +92,23 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const expandedService = ref(null); // No service expanded by default
+
+onMounted(() => {
+  // Check if URL has a hash matching a service
+  const hash = window.location.hash;
+  if (hash && hash.startsWith('#service-')) {
+    const serviceId = parseInt(hash.replace('#service-', ''));
+    if (!isNaN(serviceId)) {
+      // Small delay to ensure smooth scrolling calculation if needed, 
+      // but purely setting state should be instant. 
+      // Expanding immediately so user sees it open when they arrive.
+      expandedService.value = serviceId;
+    }
+  }
+});
 
 const services = [
   {

@@ -19,7 +19,7 @@
             <div>
               <h3 class="text-lg font-medium text-gray-300 mb-3">Starter Plan</h3>
               <div class="text-4xl font-bold mb-2">
-                $499 <span class="text-xl font-normal text-gray-400">/ Project</span>
+                499 LYD <span class="text-xl font-normal text-gray-400">/ Project</span>
               </div>
             </div>
             <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,9 +63,9 @@
           </div>
 
           <!-- Button -->
-          <button class="w-full bg-white text-black py-4 rounded-full font-bold hover:bg-gray-100 transition-colors">
+          <a href="#contact" class="block w-full text-center bg-white text-black py-4 rounded-full font-bold hover:bg-gray-100 transition-colors">
             Get Started
-          </button>
+          </a>
         </div>
 
         <!-- Professional Plan -->
@@ -77,7 +77,7 @@
                 Professional Plan <span class="text-sm">(Most Popular)</span>
               </h3>
               <div class="text-4xl font-bold mb-2">
-                $1,299 <span class="text-xl font-normal text-gray-600">/ Project</span>
+                1,299 LYD <span class="text-xl font-normal text-gray-600">/ Project</span>
               </div>
             </div>
             <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,9 +121,9 @@
           </div>
 
           <!-- Button -->
-          <button class="w-full bg-black text-white py-4 rounded-full font-bold hover:bg-gray-800 transition-colors">
+          <a href="#contact" class="block w-full text-center bg-black text-white py-4 rounded-full font-bold hover:bg-gray-800 transition-colors">
             Get Started
-          </button>
+          </a>
         </div>
       </div>
     </div>

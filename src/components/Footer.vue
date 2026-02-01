@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#050203] text-white py-8 md:py-16">
+  <footer id="contact" class="bg-[#050203] text-white py-8 md:py-16">
     <div class="container mx-auto px-6">
       <!-- Top Section: Logo, Heading & Form -->
       <div class="grid md:grid-cols-2 gap-16 mb-20">
@@ -116,7 +116,7 @@
           <a href="#" class="hover:text-white transition-colors">Privacy Statement</a>
         </div>
         <div>
-          @2020 All Rights Reserved.
+          @2026 All Rights Reserved.
         </div>
       </div>
     </div>
@@ -136,8 +136,6 @@ const form = ref({
 const isSubmitting = ref(false);
 const showSuccess = ref(false);
 
-// REPLACE THIS WITH YOUR FORMSPREE ENDPOINT
-// Example: 'https://formspree.io/f/xyzkqwer'
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeezjzae';
 
 const submitForm = async () => {

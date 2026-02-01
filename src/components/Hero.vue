@@ -26,26 +26,26 @@
             <!-- Right: Button and List -->
             <div class="flex flex-col items-end space-y-6 pt-4">
                 <!-- White Button -->
-               <button class="w-[320px] bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors text-base">
+               <a href="#contact" class="w-[320px] bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors text-base text-center inline-block">
   Get Started
-</button>
+</a>
 
 
                 <!-- White Card List -->
                 <div class="bg-white/95 backdrop-blur-sm text-black rounded-3xl overflow-hidden w-full md:max-w-[320px] shadow-xl">
                     <div class="flex flex-col">
-                        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer group">
+                        <a href="#service-2" class="flex items-center justify-between px-6 py-5 border-b border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer group">
                              <span class="font-semibold text-base">Websites Designs</span>
                              <svg class="w-5 h-5 opacity-60 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer group">
+                        </a>
+                        <a href="#service-1" class="flex items-center justify-between px-6 py-5 border-b border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer group">
                              <span class="font-semibold text-base">UI/UX Designs</span>
                              <svg class="w-5 h-5 opacity-60 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                        <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition-colors cursor-pointer group">
+                        </a>
+                        <a href="#service-3" class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition-colors cursor-pointer group">
                              <span class="font-semibold text-base">Development</span>
                              <svg class="w-5 h-5 opacity-60 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
